@@ -60,7 +60,7 @@ resource "aws_route_table_association" "rta_east_1" {
 # EC2 instance in us-east-1
 resource "aws_instance" "My_ins1" {
   provider      = aws.east-1
-  ami           = "ami-04b70fa74e45c3917" # Example AMI ID, update with a valid one
+  ami           = "ami-04b70fa74e45c3909" # Example AMI ID, Please do update with a valid one
   instance_type = "t2.small"
   subnet_id     = aws_subnet.subnet_east_1.id
   tags = {
@@ -120,7 +120,7 @@ resource "aws_route_table_association" "rta_east_2" {
 # EC2 instance in us-east-2
 resource "aws_instance" "My_ins2" {
   provider      = aws.east-2
-  ami           = "ami-09040d770ffe2224f" # Example AMI ID, update with a valid one
+  ami           = "ami-09040d770ffe2229g" # Example AMI ID, Please do update with a valid one
   instance_type = "t2.small"
   subnet_id     = aws_subnet.subnet_east_2.id
   tags = {
